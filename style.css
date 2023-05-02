@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;400;700&family=Rubik+Bubbles&display=swap');
+ *{
+     box-sizing: border-box;
+}
+ body{
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+ .container{
+     height: 100vh;
+     width: 100%;
+     text-align: center;
+}
+ .container h1{
+     font-size: 40px;
+     padding-top: 20px;
+}
+ .container .mistake{
+     background: rgb(7, 84, 114);
+     padding: 10px;
+     width: 60vmin;
+     font-size: 24px;
+     margin: 20px auto;
+     color: #fff;
+     border-radius: 30px;
+     border: 2px solid #ffffff;
+}
+ #gameBoard{
+     height: 60vmin;
+     width: 60vmin;
+     background: #fff;
+     margin: 0 auto;
+     display: flex;
+     flex-wrap: wrap;
+     border: 2px solid #000;
+}
+ .tile{
+     height: calc(100% / 9);
+     width: calc(100% / 9);
+     border: 0.5px solid #1c1919;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #fff;
+}
+ .filled{
+    color: #1f1e1e;
+     background: #f9f942;
+}
+ .select-tile{
+    
+     background: rgb(149, 223, 255);
+}
+ #digits{
+
+     width: 60vmin;
+     display: flex;
+     margin: 20px auto;
+}
+ #digits .tile{
+    padding: 10px;
+    background: rgb(25, 44, 52);
+     border-radius: 10px;
+     border: 1px solid #000;
+     color: #fff;
+     cursor: pointer;
+}
+ .border-right{
+     border-right: 2px solid #000;
+}
+ .border-bottom{
+     border-bottom: 2px solid #000;
+}
+ #delete{
+     color: #f00;
+     font-size: 30px;
+     cursor: pointer;
+}
+ .danger{
+     color: #f00;
+}
+ @media (max-width:600px) {
+     .tile{
+         font-size: 18px;
+    }
+}
+ @media (max-width:400px) {
+     .tile{
+         font-size: 16px;
+    }
+}
